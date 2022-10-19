@@ -1,5 +1,5 @@
 title: Hamza Mecca # your name (or website title) here
-logo: <img src = "/Users/hamza/Desktop/Images/profile_pic.jpg" alt="hi" class="inline"/> # your photo (or logo) here
+logo:  [Image]("/Users/hamza/Desktop/Images/profile_pic.jpg") # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
   First description 
   <br><br>
