@@ -43,7 +43,7 @@ This data was collected in 2016 however the data is updated annually. The last u
 
 The dataset has been cited to distributed survey via Amazon Mechanical Turk. 
 
-This dataset is also licensed under CC0, meaning it is public domain and we are able to manipulate and reproduce the data without copy right concerns.
+This dataset is also licensed under CC0, meaning it is public domain. This allows us to manipulate and reproduce the data without copy right concerns.
 
 
 ```javascript
@@ -56,7 +56,11 @@ if (isAwesome){
 
 I primarily worked with three tables from this dataset, each of which needed cleaning. 
 
-The tabels I used were heartrate_seconds_merged, daily_steps_merged, and weightLogInfo_merged. 
+The tables I used were heartrate_seconds_merged, daily_steps_merged, and weightLogInfo_merged. 
+
+These tables would give me insight into users' heartrate statistics as well as their general health and activity. 
+
+The first table, heartrate_seconds_merged, was extremely large, containing over 2 million rows of data. This meant I could not clean it on Excel initially.
 
 
 
