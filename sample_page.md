@@ -12,6 +12,13 @@ In this analysis, we study existing trends in smart products and make an informe
 
 The key stakeholders for this analysis are Urška Sršen (Co-founder and CCO) and the Bellabeat marketing analytics team. Sršen assigned this project and will make a final decision based on our analysis. We are a part of the Bellabeat marketing team, and our work reflects on our team members. 
 
+I was given a dataset to work with that contained data on the activity of 30 FitBit users. I found the heartrate table very interesting as it displayed user heartrate for every second over the timeframe of the study. 
+
+My analysis focused on the hypothesis that seemingly healthy users may benefit from medical information about their heart rate.
+This could be an important preventative measure against heart-related issues such as Atrial fibrillation. 
+
+
+
 ```javascript
 if (isAwesome){
   return true
@@ -30,13 +37,31 @@ The reliability of the data checks out as it is collected objectively from thirt
 
 The data is collected firsthand and therefore I am confident in its originality.
 
+The data has been cleaned and includes all relevant activities we are looking at across different time frames (calories, steps, sleep minutes etc.). 
+
+This data was collected in 2016 however the data is updated annually. The last update was 2 years ago. 
+
+The dataset has been cited to distributed survey via Amazon Mechanical Turk. 
+
+This dataset is also licensed under CC0, meaning it is public domain and we are able to manipulate and reproduce the data without copy right concerns.
+
+
 ```javascript
 if (isAwesome){
   return true
 }
 ```
 
-### 3. Support the selection of appropriate statistical tools and techniques
+### 3. Process
+
+I primarily worked with three tables from this dataset, each of which needed cleaning. 
+
+The tabels I used were heartrate_seconds_merged, daily_steps_merged, and weightLogInfo_merged. 
+
+
+
+
+
 
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
