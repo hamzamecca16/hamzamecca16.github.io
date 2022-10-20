@@ -57,7 +57,6 @@ if (isAwesome){
 I primarily worked with three tables from this dataset, each of which needed cleaning. 
 
 The tables I used were heartrate_seconds_merged, daily_steps_merged, and weightLogInfo_merged. 
-
 These tables would give me insight into users' heartrate statistics as well as their general health and activity. 
 
 The first table, heartrate_seconds_merged, was extremely large, containing over 2 million rows of data. This meant I could not initially clean it on Excel.
@@ -82,6 +81,12 @@ FROM
 WHERE
   Id <> "Id"
 ```
+
+Next, I checked different columns for any null data using the IS NULL function. Later I made sure the dates were inputted correctly using the LENGTH(STRING) function to check if any data didn’t meet the 10-string requirement.
+
+
+I was able to clean the daily_steps_merged, and weightLogInfo_merged tables in Excel. 
+This involved seperating the data and time, changing the date format and checking the data for blanks or errors.
 
 
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
