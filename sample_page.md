@@ -60,11 +60,28 @@ The tables I used were heartrate_seconds_merged, daily_steps_merged, and weightL
 
 These tables would give me insight into users' heartrate statistics as well as their general health and activity. 
 
-The first table, heartrate_seconds_merged, was extremely large, containing over 2 million rows of data. This meant I could not clean it on Excel initially.
+The first table, heartrate_seconds_merged, was extremely large, containing over 2 million rows of data. This meant I could not initially clean it on Excel.
+
+I chose to upload the data to SQL, however, the date and time column could not be read. I changed all the schema to STRING and proceeded. 
+
+I then changed the schema, separated the date and time, hid the first row since it displayed the column names.
 
 
 
+```javascript
+-- Casting the rows appropriately
+SELECT
+  CAST(Id AS INTEGER) AS Id,
+  LEFT(Time,9) AS Date,
+  RIGHT(TIME, 10) AS Time,
+  CAST(Value AS FLOAT64) AS heartrate
+FROM
+  `adept-student-364007.fitabase_data.heartrate`
 
+-- First column has the column names in it
+WHERE
+  Id <> "Id"
+```
 
 
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
