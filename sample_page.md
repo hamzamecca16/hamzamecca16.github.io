@@ -18,7 +18,17 @@ if (isAwesome){
 }
 ```
 
-### 2. Assess assumptions on which statistical inference will be based
+### 2. Prepare
+
+I downlaoded the FitBit Fitness Tracker dataset (by Mobius) from Kaggle and stored it in ‘Prepare’ folder within the ‘Case Study 2’ folder on my Desktop. 
+
+The dataset is downloaded as a file named ‘Fitbase Data 4.12.16 – 5.12.16’. The files within are .csv files. Most of the data is stored in the long format, some are in wide format. 
+
+To determine the credibility of the data I looked at reliability, originality, comprehensiveness, how up to date it is, and citability. 
+
+The reliability of the data checks out as it is collected objectively from thirty Fitbit users. My only concern is that this is a small sample size, and we would have liked data from a range of smart fitness devices to get a good overall understanding of the market. 
+
+The data is collected firsthand and therefore I am confident in its originality.
 
 ```javascript
 if (isAwesome){
