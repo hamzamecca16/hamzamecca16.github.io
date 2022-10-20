@@ -6,9 +6,11 @@ Bellabeat is a successful small company, but they have the potential to become a
 
 My job is to focus on one of Bellabeat’s products and analyze smart device data to gain insight into how consumers are using their smart devices.
 
-### 1. Suggest hypotheses about the causes of observed phenomena
+### 1. Ask
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+In this analysis, we study existing trends in smart products and make an informed recommendation to guide the marketing strategy for a specific Bellabeat product. 
+
+The key stakeholders for this analysis are Urška Sršen (Co-founder and CCO) and the Bellabeat marketing analytics team. Sršen assigned this project and will make a final decision based on our analysis. We are a part of the Bellabeat marketing team, and our work reflects on our team members. 
 
 ```javascript
 if (isAwesome){
