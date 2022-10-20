@@ -46,7 +46,7 @@ The dataset has been cited to distributed survey via Amazon Mechanical Turk.
 This dataset is also licensed under CC0, meaning it is public domain. This allows us to manipulate and reproduce the data without copy right concerns.
 
 
-```javascript
+```SQL
 if (isAwesome){
   return true
 }
