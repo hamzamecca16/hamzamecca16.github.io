@@ -68,7 +68,7 @@ I then changed the schema, separated the date and time, hid the first row since 
 
 
 
-```javascript
+```
 -- Casting the rows appropriately
 SELECT
   CAST(Id AS INTEGER) AS Id,
