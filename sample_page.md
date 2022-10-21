@@ -115,8 +115,12 @@ I plotted the heartrate of each individual user vs the date (day). I used a boxp
 
 <img src="images/heartrate_boxplot.png?raw=true"/>
 
+In this plot, I added two reference lines at 60bpm and 120bmp. This is the range of a healthy resting heartrate according to Mayo Clinic .
+
+The visualization helps us see that some users in the study show possibly concerning heartrate levels. User ID 4388161847 (second from the top) recorded a median heartrate that was consistently close to the 60bmp lower limit. This means the lower hinge and lower whisker were constantly below 60bpm.
 
 
+User ID 8877689391 (bottom user) had interesting heartrate fluctuations. Most of the IQR data was within the healthy limit, however there were days where the heartrate was surprisingly high. April 30th in particular saw an upper hinge of 158 and an upper whisker of 170. These isolated instances could potentially be cause for concern. 
 
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
