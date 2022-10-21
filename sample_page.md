@@ -183,7 +183,7 @@ The data showed very little correlation between the two variables.
 When looking at min/max daily heartrate vs steps we also see negligible correlation. 
 
 
-<img src="images/max_min_heartrate_vs_steps.png?raw=true"/>
+<img src="images/max_min_heartarte_vs_steps.png?raw=true"/>
 
 
 
