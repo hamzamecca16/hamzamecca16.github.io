@@ -207,7 +207,7 @@ ORDER BY
   ID
 ```
 
-Later, I joined the daily_heartrate and wiehgt_log tables before exporting them to Tableau. 
+Later, I joined the daily_heartrate and weihgt_log tables before exporting them to Tableau. 
 
 ```
 SELECT
