@@ -227,11 +227,11 @@ JOIN
   daily_heartrate_clean.Date = weight_log.Date;
 ```
 
-The viz I created again showed little correlation between BMI and heart rate. 
-
+The viz I created again showed little correlation between BMI and heart rate.
 
 <img src="images/average_heartrate_vs_bmi.png?raw=true"/>
 
+The plot includes reference lines to show the healthy BMI range and the average of the heart rate data being situated at 80bpm (healthy). 
 It is important to note that we did not have a large range of BMI and these users were generally fit. 
 
 
