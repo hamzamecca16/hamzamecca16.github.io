@@ -46,12 +46,6 @@ The dataset has been cited to distributed survey via Amazon Mechanical Turk.
 This dataset is also licensed under CC0, meaning it is public domain. This allows us to manipulate and reproduce the data without copy right concerns.
 
 
-```SQL
-if (isAwesome){
-  return true
-}
-```
-
 ### 3. Process
 
 I primarily worked with three tables from this dataset, each of which needed cleaning. 
@@ -91,8 +85,37 @@ This involved seperating the data and time, changing the date format and checkin
 
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
-### 4. Provide a basis for further data collection through surveys or experiments
+### 4. Analyze
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+We started by looking to plot the heartrate data as it had been given. This would give us an idea of how each user’s heartrate fluctuated over the course of the study.
+
+The cleaned heartrate table was saved as heartrate_clean, however, it was too large to download as a local file. 
+
+We saved the table to Google Could Storage using the following code:
+
+```
+EXPORT DATA
+  OPTIONS (
+    uri = 'gs://*****/*****/*.csv',
+    format = 'CSV',
+    overwrite = true,
+    header = true,
+    field_delimiter = ';')
+AS (
+  SELECT Id, Date, Time, heartrate
+  FROM `adept-student-364007.fitabase_data.heartrate_clean`
+  ORDER BY Id
+);
+```
+(I have hidden the original storage location for privacy)
+
+After uploading the heartrate_clean table to Tableau Public, we made sure the schema was accurate. 
+
+
+
+
+
+
+
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
