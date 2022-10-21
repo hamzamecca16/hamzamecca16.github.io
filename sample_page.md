@@ -185,6 +185,54 @@ When looking at min/max daily heartrate vs steps we also see negligible correlat
 
 <img src="images/max_min_heartarte_vs_steps.png?raw=true"/>
 
+#### C) Heart Rate vs BMI
+
+Lastly, I looked at how a user’s weight affected their heartrate. 
+
+I started by uploading the cleaned weight data to SQL as weight_log. 
+
+To get an idea of the average weight and BMI for each user, I queried the table.
+
+```
+SELECT
+  DISTINCT ID,
+  AVG(WeightKg) AS Average_WeightKg, 
+  AVG(WeightPounds) AS Average_WeightPounds,
+  AVG(BMI) AS Average_BMI
+FROM 
+  `adept-student-364007.fitabase_data.weight_log`
+GROUP BY
+  ID
+ORDER BY
+  ID
+```
+
+Later, I joined the daily_heartrate and wiehgt_log tables before exporting them to Tableau. 
+
+```
+SELECT
+  daily_heartrate_clean.Id,
+  daily_heartrate_clean.Date,
+  daily_heartrate_clean.Maximum_Heartrate,
+  daily_heartrate_clean.Minimum_Heartrate,
+  daily_heartrate_clean.Average_Heartrate,
+  weight_log.weightKg,
+  weight_log.weightPounds,
+  weight_log.BMI
+FROM 
+  fitabase_data.daily_heartrate_clean
+JOIN
+  fitabase_data.weight_log ON
+  daily_heartrate_clean.Id = weight_log.ID AND
+  daily_heartrate_clean.Date = weight_log.Date;
+```
+
+The viz I created again showed little correlation between BMI and heart rate. 
+
+
+<img src="images/average_heartrate_vs_bmi.png?raw=true"/>
+
+It is important to note that we did not have a large range of BMI and these users were generally fit. 
 
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
