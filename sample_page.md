@@ -18,13 +18,6 @@ My analysis focused on the hypothesis that seemingly healthy users may benefit f
 This could be an important preventative measure against heart-related issues such as Atrial fibrillation. 
 
 
-
-```javascript
-if (isAwesome){
-  return true
-}
-```
-
 ### 2. Prepare
 
 I downlaoded the FitBit Fitness Tracker dataset (by Mobius) from Kaggle and stored it in ‘Prepare’ folder within the ‘Case Study 2’ folder on my Desktop. 
@@ -60,7 +53,6 @@ I chose to upload the data to SQL, however, the date and time column could not b
 I then changed the schema, separated the date and time, hid the first row since it displayed the column names.
 
 
-
 ```
 -- Casting the rows appropriately
 SELECT
@@ -82,8 +74,6 @@ Next, I checked different columns for any null data using the IS NULL function. 
 I was able to clean the daily_steps_merged, and weightLogInfo_merged tables in Excel. 
 This involved seperating the data and time, changing the date format and checking the data for blanks or errors.
 
-
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ### 4. Analyze
 
