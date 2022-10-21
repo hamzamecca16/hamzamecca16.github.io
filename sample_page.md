@@ -87,7 +87,7 @@ This involved seperating the data and time, changing the date format and checkin
 
 ### 4. Analyze
 
-#### A. Heart Rate Boxplot
+#### A) Heart Rate Boxplot
 We started by looking to plot the heartrate data as it had been given. This would give us an idea of how each user’s heartrate fluctuated over the course of the study.
 
 The cleaned heartrate table was saved as heartrate_clean, however, it was too large to download as a local file. 
@@ -122,6 +122,10 @@ The visualization helps us see that some users in the study show possibly concer
 
 
 User ID 8877689391 (bottom user) had interesting heartrate fluctuations. Most of the IQR data was within the healthy limit, however there were days where the heartrate was surprisingly high. April 30th in particular saw an upper hinge of 158 and an upper whisker of 170. These isolated instances could potentially be cause for concern. 
+
+
+#### B) Heart Rate vs Steps
+
 
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
