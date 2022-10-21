@@ -126,6 +126,54 @@ User ID 8877689391 (bottom user) had interesting heartrate fluctuations. Most of
 
 #### B) Heart Rate vs Steps
 
+Next, I wanted to understand what average heartrate looked like compared to user activity. This would give us insight into whether more active users were less at risk of heart disease. 
+
+I uploaded the steps table as daily_steps_clean. I wanted to create a table with daily steps data merged with the average, minimum, and maximum daily heartrate for each user. 
+
+I queried the heartrate_ clean table to find the daily heartrate data. 
+
+```
+SELECT 
+  Id,
+  Date,
+  Max(heartrate) AS Maximum_Heartrate,
+  MIN(heartrate) AS Minimum_Heartrate,
+  AVG(heartrate) AS Average_Heartrate
+FROM 
+  `adept-student-364007.fitabase_data.heartrate_clean`
+GROUP BY 
+  Id,
+  Date
+ORDER BY
+  Id,
+  Date;
+```
+
+I then saved this query as a new table named daily_heartrate.
+
+Before joining daily_steps and daily_heartrate, I cleaned the Date Column in the two tables to make the schema, format, and column name uniform. I saved the new tables as daily_steps_clean and daily_heartrate_clean
+
+To join the data I used the following code:
+
+```
+SELECT
+  daily_heartrate_clean.Id,
+  daily_heartrate_clean.Date,
+  daily_heartrate_clean.Maximum_Heartrate,
+  daily_heartrate_clean.Minimum_Heartrate,
+  daily_heartrate_clean.Average_Heartrate,
+  daily_steps_clean.Steps
+FROM 
+  fitabase_data.daily_heartrate_clean
+JOIN
+  fitabase_data.daily_steps_clean ON
+  daily_heartrate_clean.Id = daily_steps_clean.Id AND
+  daily_heartrate_clean.Date = daily_steps_clean.Date;
+```
+
+
+
+
 
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
