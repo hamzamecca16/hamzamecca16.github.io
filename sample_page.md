@@ -235,4 +235,14 @@ The plot includes reference lines to show the healthy BMI range and the average 
 It is important to note that we did not have a large range of BMI and these users were generally fit. 
 
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### 5. Conclusion
+
+In my analysis I found that some users had a dangerously low blood rate over the period of the study. The heartrate data was independent of the user’s overall health and not generally affected by their physical activity.
+
+The data we have can be used to communicate if a user may need to consult a doctor about their heartrate. Seemingly healthy users can show signs of Afib or other heart related conditions. 
+
+This data needs to include the user’s age to be more relevant.
+
+Making use of heartrate data would give us a more holistic approach as a transparent fitness tool. It can also open us up to a newer market segment for older women.
+
+
