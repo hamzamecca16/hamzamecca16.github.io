@@ -171,8 +171,19 @@ JOIN
   daily_heartrate_clean.Date = daily_steps_clean.Date;
 ```
 
+The next step was uploading the new table to Tableau and create a visualization. 
+
+I looked at the correlation between average daily heart rate and daily steps.
+
+<img src="images/average_heartrate_vs_steps.png?raw=true"/>
+
+The data showed very little correlation between the two variables. 
 
 
+When looking at min/max daily heartrate vs steps we also see negligible correlation. 
+
+
+<img src="images/min_max_heartrate_vs_steps.png?raw=true"/>
 
 
 
