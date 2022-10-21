@@ -113,6 +113,7 @@ After uploading the heartrate_clean table to Tableau Public, we made sure the sc
 
 I plotted the heartrate of each individual user vs the date (day). I used a boxplot and whisker plot to be able to visualize the median, interquartile range, maximum, and minimum values during each day of the study. This plot helps us an visualize the resting heartrate and note when the heartrate has gone over/under dangerous levels. 
 
+<img src="images/heartrate_boxplot.png?raw=true"/>
 
 
 
