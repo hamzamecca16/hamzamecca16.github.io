@@ -87,7 +87,7 @@ This involved seperating the data and time, changing the date format and checkin
 
 ### 4. Analyze
 
-##### A. Heart Rate Boxplot
+#### A. Heart Rate Boxplot
 We started by looking to plot the heartrate data as it had been given. This would give us an idea of how each user’s heartrate fluctuated over the course of the study.
 
 The cleaned heartrate table was saved as heartrate_clean, however, it was too large to download as a local file. 
