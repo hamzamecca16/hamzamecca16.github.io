@@ -116,7 +116,7 @@ Next, I wanted to understand what average heartrate looked like compared to user
 
 I uploaded the steps table as daily_steps_clean. I wanted to create a table with daily steps data merged with the average, minimum, and maximum daily heartrate for each user. 
 
-I queried the heartrate_ clean table to find the daily heartrate data. 
+I queried the heartrate_ clean table to find the daily heartrate information. 
 
 ```
 SELECT 
@@ -159,7 +159,7 @@ JOIN
 
 The next step was uploading the new table to Tableau and create a visualization. 
 
-I looked at the correlation between average daily heart rate and daily steps.
+I looked at the correlation between the average daily heart rate and daily steps.
 
 <img src="images/average_heartrate_vs_steps.png?raw=true"/>
 
@@ -193,7 +193,7 @@ ORDER BY
   ID
 ```
 
-Later, I joined the daily_heartrate and weihgt_log tables before exporting them to Tableau. 
+Later, I joined the daily_heartrate and weight_log tables before exporting them to Tableau. 
 
 ```
 SELECT
@@ -218,17 +218,17 @@ The viz I created again showed little correlation between BMI and heart rate.
 <img src="images/average_heartrate_vs_bmi.png?raw=true"/>
 
 The plot includes reference lines to show the healthy BMI range and the average of the heart rate data being situated at 80bpm (healthy). 
-It is important to note that we did not have a large range of BMI and these users were generally fit. 
+It is important to note that we did not have a large range of BMI and these users were all generally fit. 
 
 
 ### 5. Conclusion
 
-In my analysis I found that some users had a dangerously low blood rate over the period of the study. The heartrate data was independent of the user’s overall health and not generally affected by their physical activity.
+In my analysis I found that some users had a dangerously low blood level over the period of the study. The heartrate data was independent of the user’s overall health and not generally affected by their physical activity.
 
 The data we have can be used to communicate if a user may need to consult a doctor about their heartrate. Seemingly healthy users can show signs of Afib or other heart related conditions. 
 
 This data needs to include the user’s age to be more relevant.
 
-Making use of heartrate data would give us a more holistic approach as a transparent fitness tool. It can also open us up to a newer market segment for older women.
+Making use of heartrate data would give us a more holistic approach as a transparent fitness tool. It can also open Bellabeat up to a newer market segment for older women.
 
 
