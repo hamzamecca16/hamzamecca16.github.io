@@ -18,7 +18,8 @@
 ### Passionfruit
 
 
-[About us](/startup_page)
+[Deck](/pdf/passionfruit_deck_6_portfolio.pdf)
+[Website](https://www.passionfruitmusic.com/)
 <img src="images/passionfruit_tn2.png?raw=true"/>
 
 ---
