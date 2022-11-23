@@ -16,7 +16,7 @@
 ### Passionfruit
 
 
-[Passionfruit](/startup_page)
+[About us](/startup_page)
 <img src="images/passionfruit_tn2.png?raw=true"/>
 
 ---
