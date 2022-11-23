@@ -17,6 +17,6 @@
 
 
 [Passionfruit](/startup_page)
-<img src="images/passionfruit_portfolio.png?raw=true"/>
+<img src="images/passionfruit_tn2.png?raw=true"/>
 
 ---
